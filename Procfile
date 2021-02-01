@@ -1,0 +1,1 @@
+web: gunicorn marketapp.wsgi:application --log-file -
