@@ -62,3 +62,8 @@ class CreateOrder(CreateView):
     success_url = reverse_lazy("home")
     template_name = "accounts/order_create_form.html"
 
+class CreateCustomer(CreateView):
+    model = Customer
+    fields = "__all__"
+    success_url = reverse_lazy("home")
+    template_name = "accounts/customer_create_form.html"

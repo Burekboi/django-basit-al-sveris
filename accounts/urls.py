@@ -12,5 +12,7 @@ urlpatterns = [
     path("updateform/<int:pk>/", views.UpdateOrder.as_view() , name="update"),
     path("deleteform/<int:pk>/", views.DeleteOrder.as_view() , name="delete"),
     path("create_order/", views.CreateOrder.as_view() , name="create"),
+    path("create_customer/", views.CreateCustomer.as_view() , name="create_customer"),
+
 ]
 
